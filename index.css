@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    padding: 40px;
+    gap: 0rem;
+    background-color: rgb(255, 249, 249);
+    background-image: url(./pattern-quotes.svg), url(./pattern-curve.svg), url(./pattern-bg.svg);
+    background-repeat: no-repeat;
+    background-position: 
+     190px 130px, bottom left,right
+    ;
+}
+.text{
+    width: 50%;
+    transform: translateX(60px);
+}
+p{
+    font-size: 32px;
+    margin-bottom: 2rem;
+}
+span{
+    font-weight: bolder;
+    font-size: 20px;
+}
+.image{
+    box-shadow: 0px 25px rgb(231, 226, 226);
+}
+.name{
+    color: gray;
+}
+#two{
+    display: none;
+}
+.slide{
+    display: flex;
+    justify-content: space-between;
+    width: 4vw;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 10px 12px;
+    transform: translateX(30px) translateY(-25px);
+}
+@media only screen and (max-width: 420px) {
+   body{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+   }
+    main{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 90vw;
+        /* justify-content: space-between; */
+        /* margin: auto; */
+        padding: 30px;
+        gap: 3rem;
+        background-color: rgb(255, 255, 255);
+        background-image:url(./pattern-bg.svg),url(./pattern-curve.svg),url(./pattern-quotes.svg);
+        background-repeat: no-repeat;
+        background-position:top,bottom,center 420px;
+        background-size: 95%,100%,20%;
+    }    
+    .text{
+        width: 95vw;
+        transform: none;
+        text-align: center;
+    }
+    p{
+        font-size: 28px;
+        margin-bottom: 2rem;
+        line-height: 2.3rem;
+    }
+    .image{
+        /* border: 1px solid; */
+        padding: 0px;
+        box-shadow: 0px 25px rgb(231, 226, 226);
+        width: 75vw;
+        margin-top: 10px;
+    }
+    .slide{
+        display: flex;
+        justify-content: space-between;
+        width: 14vw;
+        background-color: #fff;
+        border-radius: 30px;
+        padding: 10px 12px;
+        transform: translateX(120px) translateY(-25px);
+    }
+    #name{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-bottom: 50px;
+    }
+}
